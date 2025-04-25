@@ -6,9 +6,6 @@ function App() {
 	useEffect(() => {
 		tg.ready()
 	}, [])
-	const onClose = () => {
-		tg.close()
-	}
 	return (
 		<div className='App'>
 			<button onClick={onToggleButton}>toogle</button>
