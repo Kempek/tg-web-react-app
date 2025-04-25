@@ -11,4 +11,4 @@ const Header = () => {
 		</div>
 	)
 }
-export default Button
+export default Header
