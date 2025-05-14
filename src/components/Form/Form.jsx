@@ -14,7 +14,7 @@ function Form() {
 			subject,
 		}
 		tg.sendData(JSON.stringify(data))
-	}, [])
+	}, [country, street, subject])
 	useEffect(() => {
 		tg.onEvent('mainButtonClicked', onSendData)
 		return () => {
