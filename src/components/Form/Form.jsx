@@ -13,7 +13,7 @@ function Form() {
 			street,
 			subject,
 		}
-		tg.onSendData(JSON.stringify(data))
+		tg.SendData(JSON.stringify(data))
 	}, [])
 	useEffect(() => {
 		tg.onEvent('mainButtonClicked', onSendData)
