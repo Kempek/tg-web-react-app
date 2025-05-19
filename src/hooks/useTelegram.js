@@ -27,5 +27,6 @@ export function useTelegram() {
 		onClose, // Добавляем onClose в возвращаемый объект
 		onToggleButton,
 		user: tg?.initDataUnsafe?.user, // Добавляем проверку для tg
+		queryId: tg.initDataUnsafe?.query_id,
 	}
 }
